@@ -1,4 +1,4 @@
-    // This is the master skill for all Alexa Skills
+// This is the master skill for all Alexa Skills
 'use strict';
 
 const Alexa = require("alexa-sdk");
@@ -195,7 +195,7 @@ const handlers = {
         this.emit(':tell', speechOutput);
     },
 
-    'AMAZON.CancelIntent': function () {
+    'AMAZON.CancelIntent': function () {  
         const speechOutput = 'Goodbye!';
         this.attributes.oldID = this.attributes.sessionID;
         this.emit(':tell', speechOutput);
